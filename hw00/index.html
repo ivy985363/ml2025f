@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>作業</title>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- https://alexlenail.me/NN-SVG/about.html -->
+<link rel="icon" href="./favicon.svg"/>
+<style type="text/css">
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
+
+  @font-face {
+    font-family:'CircleFont';
+    src: url(https://circle472.github.io/ct2022s/hw04/CircleFont_v2.woff2); 
+  }
+
+  body {
+    background-color: rgb(106, 76, 156); /* #6A4C9C */
+    color: rgb(106, 76, 156);
+    font-family: 'CircleFont', 'Noto Sans JP', serif;
+  }
+
+  .container-fluid {
+    width:  90%;
+  }
+
+  .hw12 {
+    border: 1px solid rgb(159, 53, 58);
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .twenty {
+    border: 1px solid #f9eced;
+    color: #f9eced;
+    padding: 8px;
+    font-size: 18pt;
+  }
+
+  .twenty a {
+    color:  yellow;
+  }
+
+  .twenty a:hover {
+    color: #f9eced;
+    font-size:  16pt;
+  }
+
+  svg {
+    border: 2px solid rgb(159, 53, 58);
+  }
+
+  path {
+    pointer-events: all;
+    fill: #f9eced;
+    stroke: rgb(159, 53, 58);
+    stroke-opacity: 0.95;
+    stroke-width: 1px;
+  }
+
+  .active circle {
+    stroke: #f9eced;
+    stroke-width: 2px;
+  }
+
+  svg g text {
+    fill: rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 0, 0.1);
+    text-shadow: 0 0 16px #FF0000, 0 0 16px #000000;
+    font-size: 24pt;
+    text-anchor: middle;
+  }
+
+  .twenty:hover {
+      box-shadow: 0 0 5px 3px #f9eced;
+      color: cyan; 
+      text-shadow: 0 0 6px #FFFFFF, 0 0 6px #000000;
+  }
+
+  img:hover {
+      box-shadow: 0 0 1px 1px #f9eced;
+      animation-name: happy;
+      animation-duration: 0.5s;
+      animation-iteration-count: infinite;
+  }
+
+  @keyframes happy {
+      0% {transform: translateY(0px);}
+      25% {transform: translateY(-15px);}
+      50% {transform: translateY(0px);}
+      75% {transform: translateY(-5px);}
+      100% {transform: translateY(0px);}
+  }
+
+  img.withborder {
+    border: 1px solid #f9eced;
+  }
+
+  .toprow {
+    margin-top: 36px;
+  }
+
+  .bottomrow {
+    margin-bottom: 36px;
+  }  
+</style>
+
+</head>
+<body>
+<div class="container-fluid">
+
+  <!-- ---------------------------------------------- -->
+  <div class="row hw12 toprow">
+    <div class="col twenty"><a href="../hw00/index.html">00</a></div>
+    <div class="col twenty"><a href="../hw01/index.html">01</a></div>
+    <div class="col twenty"><a href="../hw02/index.html">02</a></div>
+    <div class="col twenty"><a href="../hw03/index.html">03</a></div>
+    <div class="col twenty"><a href="../hw04/index.html">04</a></div>
+    <div class="col twenty"><a href="../hw05/index.html">05</a></div>
+    <div class="col twenty"><a href="../hw06/index.html">06</a></div>
+  </div>
+
+  <!-- ---------------------------------------------- -->
+  <div class="row hw12">
+    <div class="col-md-6 twenty">
+      <img class="withborder" src="./me.png" height="360"> 
+    </div>
+    <div class="col-md-6 twenty">
+      詠唱詞: <br> 
+      Generate a scene of a female master's student working in a laboratory, deeply focused on writing code.<br>She has medium-length, straight black hair and wears round silver glasses.<br> She is dressed in a light green top.<br> On the desk in front of her sits a cup of traditional Japanese matcha tea.<br> The overall atmosphere should feel warm, focused, and soothing, with a soft and delicate style resembling a Japanese animated movie.
+    </div>
+  </div>
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12 bottomrow">
+    <div class="col-md-12 twenty">
+
+      <ol>
+        <li>製作大頭照
+          <ul>
+            <li>前往 <a href="https://copilot.microsoft.com/">Copilot</a>。</li>
+            <li>輸入詠唱詞，生成你的大頭照。</li>
+            <li>交代你的詠唱詞，編輯 https://github.com/你的帳號/ml2025f/hw00/index.html，修改第 134 行(取代原本的詠唱詞)。</li>
+            <li>從 Copilot 下載大頭照(按下右鍵，另存新檔案)。</li>
+            <li>大頭照命名為 me.png。</li>
+          </ul>
+        </li>
+        <li>更新作品集網頁裡的大頭照
+          <ul>
+            <li>上傳大頭照到 hw00 檔案夾 https://github.com/你的帳號/ml2025f/hw00/ 。</li>
+            <li>設定 https://github.com/你的帳號/ml2025f/ 倉庫。 Settings -> Pages -> Branch -> main -> Save。</li>
+            <li>前往 https://你的帳號.github.io/ml2025f/ 檢查是否可以正常顯示。</li>
+          </ul>
+        </li>
+      </ol>
+
+
+  
+  </div>
+
+
+  <!-- ------------------------------------------------>
+</body>
+</html>
