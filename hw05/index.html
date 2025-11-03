@@ -153,7 +153,7 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+這次作業五中，我嘗試使用YOLO系列不同版本與大小的模型，從YOLOv12一直到YOLOv8，進行了訓練與比較，希望能找出在主動脈瓣物件偵測任務中表現最佳的組合。在過程中，我調整了多項訓練參數，如使用優化器、學習率加入weight_decay和dropout以防止過擬合。資料增強方面，我關閉了mosaic和mixup，僅保留輕微的顏色、平移與縮放變化，確保醫學影像結構清晰穩定，整體訓練過程讓我更理解不同參數與模型版本對醫學影像辨識成效的影響。
     </div>
   </div>
 
@@ -169,22 +169,22 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline - 完成 baseline Colab 訓練得到訓練分數及訓練權重</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline - 調整訓練筆數、Epochs 或其他參數得到比 Simple baseline 更高的分數</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>Strong baseline - 使用不同版本、大小模型進行訓練並繳交 Colab</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -196,9 +196,33 @@
   <!-- ------------------------------------------------>
   <div class="row hw12 bottomrow">
     <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+      <!-- <iframe width="100%" height="560" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+
+      <table>
+        <tr>
+          <td> Simple Baseline mAP50 分數圖片
+          <img src="simple_baseline.png" width="100%" height="auto">
+        </tr>
+        <tr>
+          <td> Medium Baseline mAP50 分數圖片，使用Baseline模型接續訓練50個 Epochs 得到更高分
+          <img src="Medium.png" width="100%" height="auto">
+        </tr>
+        <tr>
+          <td> Strong Baseline <br>
+          Colab連結: 
+          <a href="https://colab.research.google.com/">
+          https://colab.research.google.com/drive/
+          </a> <br>
+          1.使用YOLOv12m
+          <img src="strong_yolov12m.png" width="100%" height="auto">
+          2.使用YOLOv11l
+          <img src="strong_yolov11l.png" width="100%" height="auto">
+          3.使用YOLOv11m
+          <img src="strong_yolov11m.png" width="100%" height="auto">
+          4.使用YOLOv10s
+          <img src="strong_yolov10s.png" width="100%" height="auto">
+        </tr>
+      </table>
     </div>
   </div>
 
@@ -252,3 +276,7 @@
 
 </body>
 </html>
+
+
+
+
